@@ -1,0 +1,270 @@
+.wrapper {
+    color: black;
+    transition: .5s ease-in-out;
+    animation: loading 1s;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    gap: 2.5rem;
+}
+
+.ellipse {
+    transition: .5s ease-in-out;
+    position: absolute;
+    width: 200vw;
+    height: 155vw;
+    border-radius: 200vw/155vw;
+    background: #58FE49;
+}
+
+.ellipse:nth-child(1) {
+    top: -73vw;
+    right: -128vw;
+}
+
+.footer .ellipse {
+    width: 380vw;
+    height: 220vw;
+    border-radius: 380vw/220vw;
+    top: 0vh;
+    right: -180vw;
+}
+
+.rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+    width: 100vw;
+    height: 30%;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 12%);
+}
+
+.bold_text,
+.italic_text,
+.learn_info,
+.header,
+.programm .about,
+.end_price {
+    padding: 0 1rem;
+}
+
+.logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+    top: 2rem;
+    right: 1.5rem;
+    background: #000000;
+    box-shadow: 0px .2rem 1.1rem .2rem rgba(0, 0, 0, 0.17);
+    border-radius: 50%;
+    background-image: linear-gradient(124.07deg, rgba(88, 255, 74, 1) 20%, rgba(255, 229, 90, 1) 94%);
+}
+
+.logo div {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.header {
+    display: grid;
+    gap: 1rem;
+}
+
+.title {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.about .line {
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.about .line:nth-child(1) {
+    font-weight: 400;
+}
+
+.about .line:nth-child(2) {
+    font-weight: 500;
+}
+
+.about .line:nth-child(3) {
+    font-weight: 600;
+}
+
+.button {
+    width: min-content;
+}
+
+.button button,
+.buy_button button {
+    width: 8rem;
+    outline: none;
+    font-size: 1rem;
+    padding: .8rem 0;
+    cursor: pointer;
+    border-radius: 0.7rem;
+    border: 0;
+    text-decoration: 0;
+    color: white;
+    background-color: black;
+}
+
+.footer {
+    padding-top: 6.3rem;
+    display: grid;
+    gap: .7rem;
+    padding-left: 1rem;
+    position: relative;
+    z-index: 4;
+}
+
+.footer a {
+    position: relative;
+    z-index: 1;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+}
+
+.italic_text {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.bold_text {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.text_blocks {
+    display: grid;
+    gap: 1rem;
+}
+
+.about_materials,
+.about_price,
+.programm_block {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: .85rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.about_price {
+    background-color: #49FEFE;
+    color: black;
+}
+
+.about_materials .block_header {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.lines {
+    display: grid;
+    gap: 0.1rem;
+}
+
+.lines .line {
+    font-weight: 400;
+    font-size: 0.9rem;
+    list-style-type: none;
+}
+
+.learn_info {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.items {
+    display: grid;
+    gap: 0.8rem;
+    font-size: 1rem;
+}
+
+.item_header {
+    font-weight: 600;
+}
+
+.programm {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.programm_block {
+    background: #49FEFE;
+    position: relative;
+}
+
+.programm_block li {
+    list-style-type: none;
+    color: black;
+    font-size: .85rem;
+}
+
+.price {
+    display: grid;
+}
+
+.price span:nth-child(1) {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.price span:nth-child(2) {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+.end_price {
+    display: grid;
+    color: white;
+    gap: 1.1rem;
+}
+
+.end_price .text {
+    font-style: italic;
+    font-size: .9rem;
+}
+
+.buy_button {
+    display: grid;
+}
+
+.buy_button {
+    padding-top: 3rem;
+}
+
+.buy_button button {
+    background: #fff;
+    padding: 1rem 0;
+    border-radius: 0.2rem;
+    color: black;
+    width: 16rem;
+    max-width: 75vw;
+    font-weight: 600;
+    font-size: 1.2rem;
+    justify-self: center;
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

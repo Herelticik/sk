@@ -1,0 +1,71 @@
+.wrapper {
+    display: grid;
+    gap: .6rem;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    border-radius: .85rem;
+    grid-template-rows: 2.2rem 1fr 1.8rem;
+}
+
+.items {
+    display: grid;
+    align-content: space-between;
+    gap: .6rem;
+}
+
+.items li {
+    list-style-type: none;
+    font-size: .65rem;
+    font-weight: 400;
+}
+
+.header {
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.ellipse,
+.ellipse::before {
+    height: 1.2rem;
+    width: 2.5rem;
+    border-radius: 2.5rem/1.2rem;
+    border: 0.1rem solid rgba(88, 254, 73, 1);
+}
+
+.ellipse,
+.circle {
+    position: relative;
+    justify-self: end;
+    align-self: end;
+}
+
+.circle {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: .1rem solid black;
+    border-radius: 50%;
+}
+
+.ellipse::before {
+    position: absolute;
+    content: "";
+    top: -.6rem;
+    right: -.6rem;
+}
+
+.triangle,
+.triangle_black {
+    align-self: end;
+    justify-self: end;
+}
+
+.triangle {
+    width: 2.5rem;
+}
+
+.triangle_black {
+    width: 1.7rem;
+}
