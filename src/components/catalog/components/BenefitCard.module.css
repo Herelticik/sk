@@ -1,6 +1,7 @@
 .wrapper {
     display: grid;
     gap: .6rem;
+    cursor: pointer;
     background-color: black;
     color: white;
     padding: 1rem;
@@ -68,4 +69,10 @@
 
 .triangle_black {
     width: 1.7rem;
+}
+
+@media (min-width:768px) {
+    .wrapper {
+        padding: 1rem 1.5rem;
+    }
 }

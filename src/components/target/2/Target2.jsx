@@ -1,6 +1,6 @@
-import styles from "./Target.module.css"
+import styles from "../Target.module.css"
 import { Link } from "react-router-dom";
-export const Target = ({ theme }) => {
+export const Target2 = ({ theme }) => {
     return (
         <div className={styles.wrapper} style={!theme ? { color: "white" } : { color: "black" }}>
             <div className={styles.ellipse} style={!theme ? { backgroundColor: "#FA49FE" } : { background: "#49FEFE" }} />
@@ -19,7 +19,7 @@ export const Target = ({ theme }) => {
                     </div>
                     <div className={styles.button}>
 
-                        <Link to={"/catalog"}><button>В каталог</button></Link>
+                        <Link to={"/"}><button>В каталог</button></Link>
                     </div>
                 </div>
                 <div className={styles.italic_text}>Мы создали программу, чтобы вы развили каждый из этих навыков в диджитал-среде. Узнаете, какие каналы работают для вашего проекта и как усилить позицию компании на рынке</div>

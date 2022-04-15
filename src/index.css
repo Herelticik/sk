@@ -22,3 +22,20 @@ html {
     -moz-user-select: none;
     -ms-user-select: none;
 }
+
+@media (min-width:768px) {
+    html {
+        font-size: calc(14px + (8 * 1.7) * ((100vw - 780px) / 1440));
+    }
+    .wrapper {
+        display: grid;
+        justify-items: center;
+        padding: 2rem 1rem;
+    }
+}
+
+@media (min-width:1840px) {
+    html {
+        font-size: calc(16px + (8 * 1.7) * ((100vw - 1440px) / 2560));
+    }
+}
