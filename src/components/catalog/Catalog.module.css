@@ -210,7 +210,6 @@
         justify-content: center;
     }
     .long_card {
-        justify-self: center;
         text-align: center;
         padding: 1rem;
     }

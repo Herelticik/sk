@@ -11,15 +11,16 @@ export const Target5 = ({ theme }) => {
             </div>
             <div className={styles.content}>
                 <div className={styles.header}>
-                    <div className={styles.title}>SkillX</div>
+                <div className={styles.title}>
+                        <Link to={"/"}>SkillX</Link>
+                    </div>
                     <div className={styles.about}>
                         <div className={styles.line}>Яндекс</div>
                         <div className={styles.line}>Директ</div>
                         <div className={styles.line}>Таргетолог</div>
                     </div>
                     <div className={styles.button}>
-
-                        <Link to={"/"}><button>В каталог</button></Link>
+                        <Link to={"/"}><button style={!theme ? { background: "white", color: "black" } : { background: "black", color: "white" }}>В каталог</button></Link>
                     </div>
                 </div>
                 <div className={styles.italic_text}>Мы создали программу, чтобы вы развили каждый из этих навыков в диджитал-среде. Узнаете, какие каналы работают для вашего проекта и как усилить позицию компании на рынке</div>

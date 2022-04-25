@@ -84,6 +84,11 @@
     font-size: 2rem;
 }
 
+.title a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .about .line {
     font-size: 1.8rem;
     font-style: italic;
