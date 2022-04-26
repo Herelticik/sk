@@ -203,6 +203,30 @@
     }
 }
 
+@media (max-width:390px) {
+    .short_cards {
+        gap: .5rem;
+    }
+}
+
+@media (max-width:390px) {
+    .short_cards {
+        gap: .5rem;
+    }
+    .benefits {
+        grid-template-columns: 1fr;
+        gap: 0;
+        justify-items: center;
+    }
+}
+
+@media (max-width:320px) {
+    .short_cards {
+        gap: .5rem;
+        grid-template-columns: 1fr;
+    }
+}
+
 @media (min-width:768px) {
     .rectangle {
         display: none;
