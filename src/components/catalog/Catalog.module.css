@@ -207,6 +207,13 @@
     .short_cards {
         gap: .5rem;
     }
+    .long_card .text {
+        font-size: .8rem;
+        padding-top: .5rem;
+    }
+    .long_card .header {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:390px) {
@@ -215,7 +222,8 @@
     }
     .benefits {
         grid-template-columns: 1fr;
-        gap: 0;
+        gap: .5rem;
+        column-gap: 0;
         justify-items: center;
     }
 }
