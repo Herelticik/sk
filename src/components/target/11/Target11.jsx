@@ -1,6 +1,6 @@
 import styles from "../Target.module.css"
 import { Link } from "react-router-dom";
-export const Target = ({ theme }) => {
+export const Target11 = ({ theme }) => {
     return (
         <div className={styles.wrapper} style={!theme ? { color: "white" } : { color: "black" }}>
             <div className={styles.ellipse} style={!theme ? { backgroundColor: "#FA49FE" } : { background: "#49FEFE" }} />

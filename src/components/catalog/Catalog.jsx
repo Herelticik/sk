@@ -23,87 +23,142 @@ export const Catalog = ({ theme, setTheme }) => {
                     <div className={styles.switch_text}>Нажимая кнопку - вы можете сменить режим</div>
                 </div>
                 <div className={styles.benefits}>
-                    <div className={styles.short_cards}>
-                        <Link to={"/card1"}>
-                            <BenefitCard
-                                theme={theme}
-                                state={false}
-                                header={"Яндекс Директ таргетолог"}
-                                line1={"Научим настраивать таргет"}
-                                line2={"Как найти клиентов и парсинг аудитории"}
-                                line3={"Клоакинг и зеркала"}
-                                line4={"Биллинг и прочее"}
-                            />
-                        </Link>
-                        <Link to={"/card2"}>
-                            <BenefitCard
-                                theme={theme}
-                                state={true}
-                                header={"Binance арбитраж"}
-                                line1={"Где покупаем и где продаем"}
-                                line2={"Банки и безопасность"}
-                                line3={"Торговля на фьючерсах"}
-                                line4={"P2P обмен"}
-                            />
-                        </Link>
-                        <Link to={"/card3"}>
-                            <BenefitCard
-                                theme={theme}
-                                state={false}
-                                header={"Яндекс Директ таргетолог"}
-                                line1={"Научим настраивать таргет"}
-                                line2={"Как найти клиентов и парсинг аудитории"}
-                                line3={"Клоакинг и зеркала"}
-                                line4={"Биллинг и прочее"}
-                            />
-                        </Link>
-                        <Link to={"/card4"}>
-                            <BenefitCard
-                                theme={theme}
-                                state={true}
-                                header={"Binance арбитраж"}
-                                line1={"Где покупаем и где продаем"}
-                                line2={"Банки и безопасность"}
-                                line3={"Торговля на фьючерсах"}
-                                line4={"P2P обмен"}
-                            />
-                        </Link>
-                        <Link to={"/card5"}>
-                            <BenefitCard
-                                theme={theme}
-                                state={false}
-                                header={"Яндекс Директ таргетолог"}
-                                line1={"Научим настраивать таргет"}
-                                line2={"Как найти клиентов и парсинг аудитории"}
-                                line3={"Клоакинг и зеркала"}
-                                line4={"Биллинг и прочее"}
-                            />
-                        </Link>
-                        <Link to={"/card6"}>
-                            <BenefitCard
-                                theme={theme}
-                                state={true}
-                                header={"Binance арбитраж"}
-                                line1={"Где покупаем и где продаем"}
-                                line2={"Банки и безопасность"}
-                                line3={"Торговля на фьючерсах"}
-                                line4={"P2P обмен"}
-                            />
-                        </Link>
-                    </div>
 
-                    <div className={styles.long_card} style={!theme ? { background: "white", color: "black" } : { background: "black", color: "white" }}>
-                        {!theme && <div className={styles.rectangles}>
-                            <div className={styles.rectangle} />
-                            <div className={styles.rectangle} />
-                        </div>}
-                        <div className={styles.header}>
-                            Карта Black по акции
+                    {theme ?
+                        <div className={styles.short_cards}>
+                            <Link to={"/card1"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={false}
+                                    header={"Яндекс Директ таргетолог"}
+                                    line1={"Научим настраивать таргет"}
+                                    line2={"Как найти клиентов и парсинг аудитории"}
+                                    line3={"Клоакинг и зеркала"}
+                                    line4={"Биллинг и прочее"}
+                                />
+                            </Link>
+                            <Link to={"/card2"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={true}
+                                    header={"Binance арбитраж"}
+                                    line1={"Где покупаем и где продаем"}
+                                    line2={"Банки и безопасность"}
+                                    line3={"Торговля на фьючерсах"}
+                                    line4={"P2P обмен"}
+                                />
+                            </Link>
+                            <Link to={"/card3"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={false}
+                                    header={"Яндекс Директ таргетолог"}
+                                    line1={"Научим настраивать таргет"}
+                                    line2={"Как найти клиентов и парсинг аудитории"}
+                                    line3={"Клоакинг и зеркала"}
+                                    line4={"Биллинг и прочее"}
+                                />
+                            </Link>
+                            <Link to={"/card4"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={true}
+                                    header={"Binance арбитраж"}
+                                    line1={"Где покупаем и где продаем"}
+                                    line2={"Банки и безопасность"}
+                                    line3={"Торговля на фьючерсах"}
+                                    line4={"P2P обмен"}
+                                />
+                            </Link>
+                            <Link to={"/card5"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={false}
+                                    header={"Яндекс Директ таргетолог"}
+                                    line1={"Научим настраивать таргет"}
+                                    line2={"Как найти клиентов и парсинг аудитории"}
+                                    line3={"Клоакинг и зеркала"}
+                                    line4={"Биллинг и прочее"}
+                                />
+                            </Link>
+                            <Link to={"/card6"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={true}
+                                    header={"Binance арбитраж"}
+                                    line1={"Где покупаем и где продаем"}
+                                    line2={"Банки и безопасность"}
+                                    line3={"Торговля на фьючерсах"}
+                                    line4={"P2P обмен"}
+                                />
+                            </Link>
+                        </div> :
+                        <div className={styles.short_cards}>
+                            <Link to={"/card7"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={true}
+                                    header={"Binance арбитраж"}
+                                    line1={"Где покупаем и где продаем"}
+                                    line2={"Банки и безопасность"}
+                                    line3={"Торговля на фьючерсах"}
+                                    line4={"P2P обмен"}
+                                />
+                            </Link>
+                            <Link to={"/card8"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={true}
+                                    header={"Binance арбитраж"}
+                                    line1={"Где покупаем и где продаем"}
+                                    line2={"Банки и безопасность"}
+                                    line3={"Торговля на фьючерсах"}
+                                    line4={"P2P обмен"}
+                                />
+                            </Link>
+                            <Link to={"/card9"}>
+                                <BenefitCard
+                                    theme={theme}
+                                    state={true}
+                                    header={"Binance арбитраж"}
+                                    line1={"Где покупаем и где продаем"}
+                                    line2={"Банки и безопасность"}
+                                    line3={"Торговля на фьючерсах"}
+                                    line4={"P2P обмен"}
+                                />
+                            </Link>
                         </div>
-                        <div className={styles.text}>
-                            Все курсы из каталога и индивидуальная поддержка по одной цене, акция доступна до 20 апреля
-                        </div>
-                    </div>
+
+                    }
+
+                    {theme ?
+                        <Link to={"/card10"} className={styles.long_card} style={{ background: "black", color: "white" }}>
+                            <div >
+
+                                <div className={styles.header}>
+                                    Карта Black по акции
+                                </div>
+                                <div className={styles.text}>
+                                    Все курсы из каталога и индивидуальная поддержка по одной цене, акция доступна до 20 апреля
+                                </div>
+                            </div>
+                        </Link>
+                        :
+                        <Link to={"/card11"} className={styles.long_card} style={{ background: "white", color: "black" }}>
+                            <div >
+                                <div className={styles.rectangles}>
+                                    <div className={styles.rectangle} />
+                                    <div className={styles.rectangle} />
+                                </div>
+                                <div className={styles.header}>
+                                    Карта Black по акции
+                                </div>
+                                <div className={styles.text}>
+                                    Все курсы из каталога и индивидуальная поддержка по одной цене, акция доступна до 20 апреля
+                                </div>
+                            </div>
+                        </Link>
+                    }
                 </div>
 
                 <div className={styles.differences} >

@@ -6,6 +6,12 @@ import { Target3 } from "./components/target/3/Target3";
 import { Target4 } from "./components/target/4/Target4";
 import { Target5 } from "./components/target/5/Target5";
 import { Target6 } from "./components/target/6/Target6";
+import { Target7 } from "./components/target/7/Target7";
+import { Target8 } from "./components/target/8/Target8";
+import { Target9 } from "./components/target/9/Target9";
+import { Target10 } from "./components/target/10/Target10";
+import { Target11 } from "./components/target/11/Target11";
+
 
 import {
   BrowserRouter,
@@ -25,6 +31,11 @@ function App() {
           <Route path={"/card4"} exact index element={<Target4 theme={theme} />} />
           <Route path={"/card5"} exact index element={<Target5 theme={theme} />} />
           <Route path={"/card6"} exact index element={<Target6 theme={theme} />} />
+          <Route path={"/card7"} exact index element={<Target7 theme={theme} />} />
+          <Route path={"/card8"} exact index element={<Target8 theme={theme} />} />
+          <Route path={"/card9"} exact index element={<Target9 theme={theme} />} />
+          <Route path={"/card10"} exact index element={<Target10 theme={theme} />} />
+          <Route path={"/card11"} exact index element={<Target11 theme={theme} />} />
         </Routes>
       </div>
     </BrowserRouter>
